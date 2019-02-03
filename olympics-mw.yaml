@@ -15,9 +15,6 @@ spec:
     spec:
       containers:
       - image: ${{DOCKER_IMAGE}}:${{FD_PROJECT_VERSION}}
-        env:
-        - name: OLYMPICS_DB_URL
-          value: "jdbc:oracle:thin:@olympics-db-svc:1521:XE"
         imagePullPolicy: Always
         name: olympics-mw
         ports:
