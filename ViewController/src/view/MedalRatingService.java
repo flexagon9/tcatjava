@@ -16,9 +16,9 @@ import oracle.jbo.client.Configuration;
 @Path("/medalrating")
 public class MedalRatingService
 {
-  private MedalStatList medalStatList;
+  private MedalStatList medalStatList
 
-  /*= new MedalStatList();
+  = new MedalStatList();
   static
   {
     medalStatList.add(MedalStat.getInstance("no", "Norway", 1, 14, 14, 11));
@@ -26,7 +26,7 @@ public class MedalRatingService
     medalStatList.add(MedalStat.getInstance("ca", "Canada", 3, 11, 8, 10));
     medalStatList.add(MedalStat.getInstance("us", "USA", 4, 9, 8, 6));
     medalStatList.add(MedalStat.getInstance("nl", "Netherands", 5, 8, 6, 6));
-  }*/
+  }
 
   public MedalRatingService()
   {
@@ -38,6 +38,7 @@ public class MedalRatingService
   @Produces("application/json")
   public List<MedalStat> getRatingTable()
   {
+/*
     medalStatList = new MedalStatList();
     AppModule am = null;
     int l = 0;
@@ -59,7 +60,7 @@ public class MedalRatingService
         Configuration.releaseRootApplicationModule(am, false);
     }
 
-
+*/
     return medalStatList.getList();
   }
 
