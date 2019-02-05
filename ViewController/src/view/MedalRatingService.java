@@ -16,7 +16,7 @@ import oracle.jbo.client.Configuration;
 @Path("/medalrating")
 public class MedalRatingService
 {
-  private MedalStatList medalStatList
+  private static MedalStatList medalStatList
 
   = new MedalStatList();
   static
